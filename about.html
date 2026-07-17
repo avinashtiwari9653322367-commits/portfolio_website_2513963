@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about me</title>
+    <style>
+        body::-webkit-scrollbar {
+            display: none;
+            }
+        .about{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            height: 60px;
+            width: 500px;
+            border: 5px solid black;
+            margin: 50px;
+            background-color: grey;
+            color: white;
+        }
+        .skills{
+            background-color: grey;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            height: 60px;
+            width: 300px;
+            border: 5px solid black;
+            margin: 50px;
+        }
+        
+        .about_me{
+            font-size: 20px;
+        }
+        table {
+            margin: auto;
+            border: 3px solid black;
+            border-collapse: collapse;
+            width: 80%;
+            margin-bottom: 50px;
+        }
+        th,
+        td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            background-color: white;
+            font-size: 20px;
+        }
+        ol{
+            font-size: 20px;
+        }
+        .Back{
+            height: 50px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 50px;
+            font-size: 30px;
+            margin: 50px;
+            color: white;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+        <center><div class="about"><h1><u>Personal Information</u></h1></div></center>
+    <main>
+        <ul class="about_me">
+            <li><u><b>Name</b></u>: Avinash Tiwari</li>
+            <li><u><b>Age</b></u>: 17</li>
+            <li><u><b>Gender</b></u>: Male</li>
+            <li><u><b>Class</b></u>: Btech CSE</li>
+            <li><u><b>Height</b></u>: 5.11 feet</li>
+            <li><u><b>Passion</b></u>: Coding</li>
+        </ul>
+        <hr>
+        <table>
+            <center><div class="about"><h1><u>Education Details</u></h1></div></center>
+            <tr>
+                <th>Qualification</th>
+                <th>Institute</th>
+                <th>Year</th>
+                <th>Percentage</th>
+            </tr>
+            <tr >
+                <td>10th</td>
+                <td>Gyan Niketan Public School</td>
+                <td>2023</td>
+                <td>89.4%</td>
+            </tr>
+            <tr>
+                <td>12th</td>
+                <td>School Of Eminence</td>
+                <td>2025</td>
+                <td>89%</td>
+            </tr>
+            <tr>
+                <td>B.Tech CSE</td>
+                <td>Guru Nanak Dev Engineering College</td>
+                <td>2025-Present</td>
+                <td>__</td>
+            </tr>
+        </table>
+        <hr>
+        <center><div class="skills"><h1><u>Skills</u></h1></div></center>
+        <ol>
+            <li><u><b>C++</b></u></li>
+            <li><u><b>Python</b></u></li>
+            <li><u><b>HTML</b></u></li>
+            <li><u><b>CSS</b></u></li>
+            <li><u><b>Java Script</b></u></li>
+        </ol>
+        <hr>
+        <center><input class="Back" type="button" value="Go Back" onclick="history.back()"></center>
+    </main>
+</body>
+</html>

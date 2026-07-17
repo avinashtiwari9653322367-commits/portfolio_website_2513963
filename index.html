@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+.heading{
+    font-size: 70px;
+}
+.heading_box{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 500px;
+    border: 10px solid black;
+}
+body::-webkit-scrollbar {
+display: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: grey;
+    height: 80px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.navbar a{
+    text-decoration: none;
+}
+.navbar h3{
+    height: 40px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.main{
+    position: relative;
+}
+.black{
+    display: inline-block;
+    height: 600px;
+    width: 40%;
+    background-color: black;
+    margin-left: 20px;
+}
+.image{
+    z-index: 2;
+    height: 500px;
+    width: 350px;
+    position: absolute;
+    top: 50px;
+    left: 120px;
+}
+
+.Profile_text{
+    position: absolute;
+    right: 8%;
+    bottom: 35%;
+}
+
+.small-text{
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.2;
+    margin-bottom: 50px;
+}
+
+.name{
+    font-family: "Poppins", sans-serif;
+    font-size: 78px;
+    font-weight: 650;
+    color: #000;
+    line-height: 1;
+    letter-spacing: -2px;
+    margin: 0;
+}
+
+.role{
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #8a8a8a;
+    line-height: 1.4;
+    margin-top: 10px;
+}
+footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+   }
+
+    </style>
+<body>
+    <header>
+        <center><div class="heading_box"><h1 class="heading"><u>My Portfolio</u></h1></div></center>
+        <div class="navbar">
+            <div class="about_me"><a href="introduction.html"><h3>About Me</h3></a></div>
+            <div class="projects"><a href="new_project.html"><h3>Projects</h3></a></div>
+            <div class="extra_details"><a href="extraideas.html"><h3>Extra Details</h3></a></div>
+            <div class="contact_me"><a href="contact.html"><h3>Contact Us</h3></a></div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="frame">
+            <div class="black">
+                <img class="image" src="image.png" alt="">
+            </div>
+            <div class="Profile_text">
+                <h3 class="small-text">Hi, I am</h3>
+                <h1 class="name">Avinash Tiwari</h1>
+                <p class="role">Front-end Developer / UI Designer</p>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2026 My Portfolio. All Rights Reserved.</p>
+        </footer>
+    </section>
+</body>
+</html>

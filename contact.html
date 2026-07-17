@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        body::-webkit-scrollbar {
+        display: none;
+        }
+        .head{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            height: 60px;
+            width: 400px;
+            border: 5px solid black;
+            margin: 50px;
+            background-color: grey;
+            color: white;
+        }
+        form{
+            font-size: 30px;
+        }
+        .Back{
+            height: 50px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 50px;
+            font-size: 30px;
+            margin: 50px;
+            color: white;
+            background-color: grey;
+        }
+        .submit{
+            height: 40px;
+            width: 150px;
+            border: 2px solid black;
+            border-radius: 50px;
+            font-size: 30px;
+            margin: 50px;
+            color: white;
+            background-color: grey;
+        }
+        .gender{
+            font-size: 20px;
+        }
+    </style>
+<body>
+    <header>
+        <center><div class="head"><h1><u>Contact form</u></h1></div></center>
+        <h1><u>Give your details here I will contact you</u></h1>
+    </header>
+    <main>
+        <form action="/action.php">
+        <h5>Name: <input type="text" placeholder="Enter your Name"></h5>
+        <input type="text" placeholder="Username">
+        <br>
+        <input type="password" placeholder="Password">
+        <br>
+        <br>
+        <label><b>Gender:-</b></label><br>
+
+<div class="gender">
+<input type="radio" name="gender" value="Male"> Male &nbsp;&nbsp;
+<br>
+<input type="radio" name="gender" value="Female"> Female &nbsp;&nbsp;
+<br>
+<input  type="radio" name="gender" value="Other"> Other
+<br></div>
+        <h5>Select your city: <select name="city"></h5>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Ludhiana">Ludhiana</option>
+        </select>
+        <br>
+        <h5>Enter your Gmail: <input type="email" placeholder="abc123@gmail.com"></h5>
+        <h5>Contact Number: <input type="tel" placeholder="Enter your Number"></h5>
+        <h5>Date of submitting this form: <input type="date" placeholder="Enter Date"></h5>
+        <pre><input class="submit" type="Submit" value="Submit">                                                         <input class="submit" type="Reset" value="Reset"></pre>
+        <center><input class="Back" type="button" value="Go Back" onclick="history.back()"></center>
+        </form>
+    </main>
+</body>
+</html>
